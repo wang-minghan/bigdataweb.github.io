@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <title>个人简历</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="author" content="王名涵">
+    <meta name="keywords" content="个人主页，数据工程师">
+    <meta name="description" content="人工智能，数据分析">
+    <!-- 国内镜像的Bootstrap链接 -->
+    <link href="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/5.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="icon" href="/images/myicon/image.png" type="image/x-icon" >
+
+    <!-- 本地的样式文件 -->
+    <link rel="stylesheet" type="text/css" href="css/vendor.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+
+<body class="bg-body homepage post-template" data-bs-spy="scroll" data-bs-target="#header-nav" tabindex="0">
+  <a class="menu-btn"><span></span></a>
+
+  <div class="container-fluid overflow-hidden">
+
+    <header id="header-nav" class="col-lg-2 position-fixed px-5 bg-white h-100">
+      <div class="header-wrap d-flex flex-column justify-content-between h-100">
+        <div class="navigation">
+          <div class="site-logo mt-5  " >
+            <a href="index.html">
+              <img src="images/myicon/logo.png" alt="logo" class="img-fluid" style="max-width:160px;">
+            </a>
+          </div>
+
+          <nav id="one-page-menu" class="vertical-menu ">
+            <ul class="menu-list list-unstyled">
+              <li ><a href="#home" class="nav-link">首页</a></li>
+              <li ><a href="#about" class="nav-link">关于</a></li>
+              <li ><a href="#experience" class="nav-link">服务</a></li>
+              <li ><a href="#portfolio" class="nav-link">作品案例</a></li>
+              <li ><a href="#contact" class="nav-link">联系我</a></li>
+              <li >
+                <a class="nav-link btn-toggle d-flex justify-content-between align-items-center collapsed"
+                  data-bs-toggle="collapse" data-bs-target="#pages-collapse" aria-expanded="false">
+                  更多
+                </a>
+                <div id="pages-collapse" class="collapse">
+                  <ul class="list-unstyled py-3">
+                    <li>
+                        <a href="Portfolio album.html">全作品集图册 </a>
+                      </li>
+                      <li>
+                        <a href="#">生活圈子（未上传）</a>
+                      </li>
+                      <li>
+                        <a href="#">生活日志（未上传）</a>
+                      </li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="mt-5">
+          <div class="email-links">
+            <a href="mailto:minghan.wang@foxmail.com" class="py-3 my-3 border-bottom d-flex">minghan.wang@foxmail.com</a>
+          </div>
+          <ul class="list-unstyled d-flex justify-content-start flex-wrap gap-3 ">
+
+            <li>
+                <a href="#" class="text-dark">
+                    <svg t="1709371788473" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="7851" width="24" height="24"><path d="M128 490.667v-224l256-56.32v276.48l-256 3.84m725.333-384V480l-426.666 6.4V200.96l426.666-94.293M128 533.333l256 3.84v290.56l-256-49.066V533.333M853.333 544v373.333L426.667 835.84V537.6l426.666 6.4z" fill="#1296db" p-id="7852"></path></svg>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="text-dark">
+                    <svg t="1709371179453" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="7506" width="24" height="24"><path d="M512 1024C229.23 1024 0 794.77 0 512S229.23 0 512 0s512 229.23 512 512-229.23 512-512 512z m107.91-626.371H640c-20.09-94.744-115.566-162.962-225.304-162.962-124.002 0-222.696 86.04-222.696 198.607 0 65.097 34.572 115.492 89.43 156.94l-23.114 71.12 77.995-41.448a354.748 354.748 0 0 0 77.97 11.8h20.114a133.608 133.608 0 0 1-5.851-47.47 193.122 193.122 0 0 1 57.466-134.412 181.37 181.37 0 0 1 133.096-52.175h0.804z m-115.273-56.296c15.848 0 28.696 14.288 28.696 31.915s-12.848 31.915-28.696 31.915c-17.652 1.95-33.402-12.313-35.304-31.94 0-22.284 17.457-31.89 34.719-31.89h0.585z m-171.032 63.878c-17.555 1.463-33.012-12.653-34.938-31.89 1.926-19.212 17.383-33.329 34.938-31.89 16.042 0 29.062 14.287 29.062 31.915 0 17.603-13.02 31.89-29.062 31.89zM832 574.805c0-92.233-90.136-169.472-192-169.472-107.764 0-192 77.24-192 169.448 0 92.257 84.456 169.496 192 169.496a264.24 264.24 0 0 0 66.828-11.873L767.586 768l-17.408-59.538c49.42-35.596 81.017-83.286 81.017-133.852l0.805 0.195zM573.562 554.52c-10.435 0-18.895-9.484-18.895-21.187s8.46-21.211 18.895-21.211c11.727-1.39 22.308 7.997 23.771 21.114-1.39 13.214-11.97 22.698-23.771 21.284z m128 0.098c-10.435 0-18.895-9.509-18.895-21.212 0-11.751 8.46-21.26 18.895-21.26 11.727-1.414 22.308 7.997 23.771 21.139-2.194 12.921-12.58 22.04-24.259 21.333h0.488z" fill="#0ABC64" p-id="7507"></path></svg>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="text-dark">
+                    <svg t="1709371858943" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="8993" width="24" height="24"><path d="M0 0m160 0l704 0q160 0 160 160l0 704q0 160-160 160l-704 0q-160 0-160-160l0-704q0-160 160-160Z" fill="#10A37F" p-id="8994"></path><path d="M866.184 445.978a201.032 201.032 0 0 0-17.69-166.99 208.948 208.948 0 0 0-180.68-103.224 211.92 211.92 0 0 0-43.744 4.576A207.256 207.256 0 0 0 469.966 112h-1.776c-90.37 0-170.482 57.528-198.284 142.362a205.92 205.92 0 0 0-137.754 98.62 203.43 203.43 0 0 0 25.644 241.07 200.944 200.944 0 0 0 17.69 166.93c45.112 77.52 135.802 117.416 224.394 98.678A207.286 207.286 0 0 0 553.984 928h1.836c90.428 0 170.54-57.528 198.312-142.42a205.948 205.948 0 0 0 137.726-98.62 203.392 203.392 0 0 0-25.646-241.012zM555.354 874.668h-0.204a155.938 155.938 0 0 1-98.996-35.408 114.852 114.852 0 0 0 4.866-2.74l164.654-93.84a26.374 26.374 0 0 0 13.55-22.964V490.508l69.592 39.634a2.448 2.448 0 0 1 1.37 1.894v189.72c-0.088 84.31-69.36 152.708-154.832 152.884z m-332.98-140.38a151.02 151.02 0 0 1-18.504-102.466l4.896 2.914 164.654 93.84a27.13 27.13 0 0 0 27.072 0l201.022-114.532v79.414a2.448 2.448 0 0 1-0.99 1.982l-166.46 94.83a156.51 156.51 0 0 1-211.688-55.954z m-43.332-354.64a153.96 153.96 0 0 1 80.694-67.058l-0.088 5.596v187.854a26.302 26.302 0 0 0 13.522 22.936l201.022 114.532-69.59 39.634a2.536 2.536 0 0 1-2.332 0.232l-166.49-94.918A151.812 151.812 0 0 1 179.07 379.62z m571.826 131.288l-200.994-114.53 69.592-39.636a2.506 2.506 0 0 1 2.332-0.232l166.488 94.83a152.118 152.118 0 0 1-23.954 275.984v-193.54a26.346 26.346 0 0 0-13.406-22.876z m69.27-102.874q-2.43-1.472-4.894-2.884l-164.654-93.84a27.16 27.16 0 0 0-27.044 0l-201.052 114.53v-79.442a2.444 2.444 0 0 1 1.02-1.982l166.46-94.714a156.636 156.636 0 0 1 77.402-20.46c85.59 0 155.008 68.486 155.008 152.914a150.9 150.9 0 0 1-2.244 25.88z m-435.47 141.344l-69.62-39.636a2.448 2.448 0 0 1-1.34-1.894v-189.72c0.028-84.368 69.444-152.796 155.006-152.796a156.454 156.454 0 0 1 99.17 35.38q-2.474 1.322-4.896 2.74l-164.652 93.868a26.346 26.346 0 0 0-13.552 22.966v0.144l-0.116 228.976z m37.798-80.436l89.554-51 89.524 51v102l-89.524 51-89.554-51z" fill="#FFFFFF" p-id="8995"></path></svg>
+                  </svg>
+                </a>
+              </li>
+        </ul>
+        <div class="py-4 border-top mb-3">
+
+
+
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="col-lg-10 offset-lg-2">
+      <div class="container">
+
+        <!-- 主要-->
+        <div class="justify-content-center px-1 mx-1 px-xl-5 mx-xl-5">
+
+          <section id="home" class="py-5 bg-text" data-text="01">
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="banner-image text-center" data-aos="fade-right">
+                  <img src="images/头像png.png" alt="banner"  class="img-fluid " style="max-width: 80%;"  >
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="banner-content my-1 pt-1 my-lg-5 pt-lg-5" data-aos="fade-in">
+                  <span class="text-muted text-uppercase">数据分析师/人工智能专家</span>
+                  <h1 class="banner-title display-xl lh-2 txt-fx slide-up custom-margin">Lucas.名涵</h1>
+                </div>
+              </div>
+            </div>
+
+            <div class="row ">
+                <div class="col-lg-3">
+                  <div class="icon-box" data-aos="fade-up">
+                    <span>01</span>
+                    <h3 class="sub-heading" style="letter-spacing: 2px;">BI数据分析</h3> <!-- 增加 letter-spacing 样式 -->
+                    <p style="letter-spacing: 2px;">数据整合，转化为易于可操作的可视化见解，进行战略分析和解决问题。</p> <!-- 增加 letter-spacing 样式 -->
+                  </div>
+                </div>
+                <div class="col-lg-3">
+                  <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
+                    <span>02</span>
+                    <h3 class="sub-heading" style="letter-spacing: 2px;">AI人工智能</h3> <!-- 增加 letter-spacing 样式 -->
+                    <p style="letter-spacing: 2px;">人工智能理论基础和实践经验，应用各种人工智能技术解决实际问题。</p> <!-- 增加 letter-spacing 样式 -->
+                  </div>
+                </div>
+                <div class="col-lg-3">
+                  <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
+                    <span>03</span>
+                    <h3 class="sub-heading" style="letter-spacing: 2px;">DM数据库管理</h3> <!-- 增加 letter-spacing 样式 -->
+                    <p style="letter-spacing: 2px;">数据的一系列活动和策略，确保数据的完整性、可靠性、安全性和可用性。</p> <!-- 增加 letter-spacing 样式 -->
+                  </div>
+                </div>
+                <div class="col-lg-3">
+                  <a href="#portfolio" class="btn btn-dark text-uppercase py-4 px-5" data-aos="fade-up" data-aos-delay="300">查看项目信息</a>
+                </div>
+              </div>
+
+
+          </section>
+
+          <section id="about" class="my-5 py-5 bg-text" data-text="02">
+            <div class="row d-flex flex-wrap" data-aos="fade-up">
+              <div class="col-lg-6 pb-5">
+                <span class=" text-muted text-uppercase ">我的简介</span>
+                <h2 class="display-4 txt-fx slide-up">教育背景</h2>
+                <div class="data-info py-3" data-aos="fade-up">
+                  <span class="meta-date">2019 - 2023</span>
+                  <h3 class="info-title">经济学专业 </h3>
+                  <p>韩国 首尔 建国大学</p>
+                </div>
+                <div class="data-info" data-aos="fade-up" data-aos-delay="100">
+                  <span class="meta-date">2023 - 2024</span>
+                  <h3 class="info-title">大数据专业</h3>
+                  <p>韩国 水源 亚洲大学</p>
+                </div>
+              </div>
+              <div class="col-lg-6 pb-5">
+                <h2 class="display-4 txt-fx slide-up">工作经历</h2>
+                <div class="data-info py-3" data-aos="fade-up" data-aos-delay="200">
+                  <span class="meta-date">2022.04- 2022.06</span>
+                  <h3 class="info-title">商业数据研究专员 </h3>
+                  <p>上海 欧睿信息咨询公司</p>
+                </div>
+                <div class="data-info" data-aos="fade-up" data-aos-delay="300">
+                  <span class="meta-date">2023 - present</span>
+                  <h3 class="info-title">人工智能指导专家</h3>
+                  <p>青岛 标贝商务信息咨询</p>
+                </div>
+              </div>
+            </div>
+            <div class="row d-flex flex-wrap" data-aos="fade-up">
+              <div class="col-lg-6 pb-5">
+                <h2 class="display-4 txt-fx slide-up">竞赛项目</h2>
+                <div class="data-info py-3" data-aos="fade-up">
+                  <span class="meta-date">2022 - 2023</span>
+                  <h3 class="info-title">普惠金融与电商走进乡村</h3>
+                  <p>香港中文大学基金会 荣获杰出证书(10%) 并发布期刊</p>
+                </div>
+                <div class="data-info" data-aos="fade-up" data-aos-delay="100">
+                  <span class="meta-date">2023-2024</span>
+                  <h3 class="info-title">心脏功能-人工智能预测</h3>
+                  <p>电子科技大学基金会 训练模型达到核心期刊要求</p>
+                </div>
+              </div>
+              <div class="col-lg-6 pb-5">
+                <h2 class="display-4 txt-fx slide-up">未来目标</h2>
+                <div class="data-info py-3" data-aos="fade-up" data-aos-delay="200">
+                  <span class="meta-date">近两年</span>
+                  <h3 class="info-title">全栈开发</h3>
+                  <p>结合AI技术，对物联网有全面的认知</p>
+                </div>
+                <div class="data-info" data-aos="fade-up" data-aos-delay="300">
+                  <span class="meta-date">未来五年</span>
+                  <h3 class="info-title">打通自己的商业产品</h3>
+                  <p>以新能源，神经网络，区块链，为着力点</p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section id="experience" class="my-5 py-5 bg-text" data-text="03">
+            <div class="row justify-content-center mb-5">
+              <div class="col-lg-6" data-aos="fade-up">
+                <span class="text-muted text-uppercase">我能够为你做的</span>
+                <h2 class="display-1 txt-fx slide-up">丰富自己，推出新技能</h2>
+                <p>过去经验的累计，薄发出新的技能点，碰撞出新想法</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="info-element py-4 mt-3" data-aos="fade-up">
+                  <table class="table">
+                    <tbody>
+                      <tr>
+                        <th>年龄</th>
+                        <td>25</td>
+                      </tr>
+                      <tr>
+                        <th>国家</th>
+                        <td>中国</td>
+                      </tr>
+                      <tr>
+                        <th>地点</th>
+                        <td>广东省惠州市/韩国首尔地区</td>
+                      </tr>
+                      <tr>
+                        <th>E-mail</th>
+                        <td><a href="#">minghan.wang@foxmail.com</a></td>
+                      </tr>
+                      <tr class="no-border-bottom">
+                        <th>电话</th>
+                        <td>13160771144</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="skill-chart py-4" data-aos="fade-up">
+                  <ul class="skill-chart-list list-unstyled">
+                    <li>
+                      <div class="chart-header d-flex justify-content-between">
+                        <span class="skill-title">数据分析类软件</span>
+                        <span class="percentage">90%</span>
+                      </div>
+                      <div class="chart-border">
+                        <div class="chart-percentage ninety-percent"></div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="chart-header d-flex justify-content-between">
+                        <span class="skill-title">深度学习的算法建模</span>
+                        <span class="percentage">75%</span>
+                      </div>
+                      <div class="chart-border">
+                        <div class="chart-percentage ninety-percent"></div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="chart-header d-flex justify-content-between">
+                        <span class="skill-title">数据可视化</span>
+                        <span class="percentage">80%</span>
+                      </div>
+                      <div class="chart-border">
+                        <div class="chart-percentage eighty-percent"></div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="chart-header d-flex justify-content-between">
+                        <span class="skill-title">前端开发</span>
+                        <span class="percentage">75%</span>
+                      </div>
+                      <div class="chart-border">
+                        <div class="chart-percentage ninety-five-percent"></div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section id="portfolio" class="my-5 py-5 bg-text" data-text="04">
+            <div class="section-header my-5" data-aos="fade-up">
+              <div class="row justify-content-center g-5">
+                <div class="col-lg-4">
+                  <span class="text-muted text-uppercase">一些我最近的作品</span>
+                  <h2 class="display-1 txt-fx slide-up">作品集</h2>
+                </div>
+                <div class="col-lg-4" data-aos="fade-up">
+                  <p>分享与开源是人类进步的阶梯，我们站在巨人的肩膀上看世界</p>
+                  <a href="Portfolio album.html" class="btn btn-dark px-5 py-4">查看全部</a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper portfolio-Swiper portfolio-content py-4" data-aos="fade-up">
+              <div class="swiper-wrapper mb-4">
+                <!-- 事件1 -->
+                <div class="swiper-slide">
+                      <a href="single-portfolio.html" title="portfolio details">
+                                <div class="zoomImage" style="background-image: url(images/异常心音检测.jpg);">
+                                <div class="overlay">
+                                <div class="text-overlay">
+                                <h2>异常心音检测</h2>
+                                <p>denosie+pitch+masking+cnn+lstm</p>
+                                </div>
+                                </div>
+                                </div>
+                        </a>
+                  </div>
+                <!-- 事件2 -->
+                <div class="swiper-slide">
+                      <a href="single-portfolio.html" title="portfolio details">
+                                <div class="zoomImage" style="background-image: url(images/手势识别.jpg);">
+                                <div class="overlay">
+                                <div class="text-overlay">
+                                <h2>手势识别</h2>
+                                <p>深度学习中的机器视觉</p>
+                                </div>
+                                </div>
+                                </div>
+                        </a>
+                  </div>
+                <!-- 事件3 -->
+                <div class="swiper-slide">
+                      <a href="single-portfolio.html" title="portfolio details">
+                                <div class="zoomImage" style="background-image: url(images/数据分析.jpg);">
+                                <div class="overlay">
+                                <div class="text-overlay">
+                                <h2>数据可视化</h2>
+                                <p>通过bi软件进行数据处理，实现企业风险控制</p>
+                                </div>
+                                </div>
+                                </div>
+                        </a>
+                  </div>
+                <!-- 事件4 -->
+                <div class="swiper-slide">
+                      <a href="single-portfolio.html" title="portfolio details">
+                                <div class="zoomImage" style="background-image: url(images/网络.jpg.webp);">
+                                <div class="overlay">
+                                <div class="text-overlay">
+                                <h2>神经网络</h2>
+                                <p>神经网络模型对数据修改</p>
+                                </div>
+                                </div>
+                                </div>
+                        </a>
+                  </div>
+                <!-- 事件5 -->
+                <div class="swiper-slide">
+                      <a href="single-portfolio.html" title="portfolio details">
+                                <div class="zoomImage" style="background-image: url(images/购物推荐算法.jpg.webp);">
+                                <div class="overlay">
+                                <div class="text-overlay">
+                                <h2>英国零售商客户推荐算法</h2>
+                                <p>knn+rmf</p>
+                                </div>
+                                </div>
+                                </div>
+                        </a>
+                  </div>
+                </div>
+                <div class="swiper-pagination "></div>
+              </div>
+            </div>
+          </section>
+
+          <section id="contact" class="my-5 py-5 bg-text" data-text="05">
+            <div class="container">
+              <div class="row justify-content-center mb-5">
+                <div class="col-lg-6" data-aos="fade-up">
+                  <span class="text-muted text-uppercase">感谢您的阅读</span>
+                  <h2 class="display-1 txt-fx slide-up">联系我</h2>
+                  <p>让我们成为一个团队，成为快乐的上班搭子吧！</p>
+                </div>
+              </div>
+              <div class="row d-flex g-5">
+                <div class="col-lg-7" data-aos="fade-up">
+                  <h3>高频问题解答</h3>
+                  <div class="accordion" id="accordionExample2">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                          data-bs-target="#accordion-collapse1" aria-expanded="true"
+                          aria-controls="accordion-collapse1">
+                         你在你的行业里专业度怎么样？
+                        </button>
+                      </h2>
+                      <div id="accordion-collapse1" class="accordion-collapse collapse show"
+                        aria-labelledby="headingOne" data-bs-parent="#accordionExample2">
+                        <div class="accordion-body">
+                            在数据分析方向掌握：spss，gitch，SQL，python，R，MATLAB，Tableau。
+                            人工智能：深度学习，机器视觉，NLP
+                            都是我掌握的技能，知识，可以为你达到满意的服务。
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                          data-bs-target="#accordion-collapse2" aria-expanded="false"
+                          aria-controls="accordion-collapse2">
+                          您通常同时与多少个客户合作？
+                        </button>
+                      </h2>
+                      <div id="accordion-collapse2" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                        data-bs-parent="#accordionExample2">
+                        <div class="accordion-body">
+                          通常情况下，我会根据项目的复杂性和工作量来确定我同时处理的客户数量。我更注重确保为每个客户提供高质量的服务，而不是简单地追求数量。在我的经验中，我发现同时处理两到三个客户是我可以有效管理的范围。这样我可以确保能够全力以赴地专注于每个项目，并确保达到客户的期望。当然，我也会灵活调整，以适应不同项目的需求和时间要求。曾经合作的公司有：妙可蓝多，蒙牛，中国体彩等多个知名公司。
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                          data-bs-target="#accordion-collapse3" aria-expanded="false"
+                          aria-controls="accordion-collapse3">
+                          你现在有能力承担项目吗？
+                        </button>
+                      </h2>
+                      <div id="accordion-collapse3" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                        data-bs-parent="#accordionExample2">
+                        <div class="accordion-body">
+                          在做商务咨询的时候大部分的任务环境都是需要我，独立完成。因此，项目的自主驱动力，我认为我是非常高的。
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-lg-5">
+                  <div class="right-content" data-aos="fade-up">
+
+                    <div class="element-header align-right">
+                      <h3>请随时给我发消息留下一些你想说的话。</h3>
+                    </div>
+
+                    <div class="contact-form py-4">
+                      <form id="form" class="form-group">
+                        <div class="pb-2"><input type="text" name="name" placeholder="名字"
+                            class="form-control">
+                        </div>
+                        <div class="pb-2"><input type="text" name="address" placeholder="邮箱地址"
+                            class="form-control"></div>
+                        <div class="pb-2"><textarea placeholder="你想说的话" rows="6" class="form-control"></textarea>
+                        </div>
+                        <button type="submit" name="submit" class="btn btn-dark w-100 btn-rounded">提交</button>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+        <!-- / 结束 -->
+    </main>
+
+  </div>
+
+  <script src="js/jquery-1.11.0.min.js"></script>
+  <script src="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/5.3.1/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+  <script src="js/plugins.js"></script>
+  <script src="js/script.js"></script>
+
+</body>
+
+</html>
